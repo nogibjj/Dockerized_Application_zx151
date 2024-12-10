@@ -1,11 +1,16 @@
-# Dockerized Application
+# Dockerized Python App
 
-## Overview
-This is a simple Python Flask application that has been containerized with Docker. The project includes a CI/CD pipeline to automatically build and push the Docker image to Docker Hub.
+This is a simple Python application that runs in a Docker container. It uses Flask to serve a simple "Hello, World!" endpoint.
 
-## How to Run
+## Getting Started
 
-### Locally
-1. Clone the repository:
-   ```bash
-   git clone <repo_url>
+### Prerequisites
+- Docker installed
+- Python 3.9 installed (if testing locally)
+
+### Running Locally
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app/main.py
